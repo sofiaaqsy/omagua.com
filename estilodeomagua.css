@@ -1,0 +1,258 @@
+*{
+	
+}
+#global{
+	height: 1000px;
+	width: 1024px;
+	margin-right: auto;
+	margin-left:auto;	
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-image: url(c.jpg);
+	}
+#head{
+	height: 100px;
+	width: 1024px;
+	position: relative;
+
+}
+#espaciador{
+	height: 20px;
+	width: 1004px;
+	background: #fff;
+	padding-top: 2px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	
+
+}
+#menu{
+	height: 50px;
+	width: 1024px;
+
+}
+
+div#inicio {
+	width: 204.8px;
+	height: 50px;
+	background:#A9F5BC;
+
+	
+	float: left;
+}
+div#inicio, div#resena, div#misionvision, div#constitucion, div#otro   {
+	width: 204.8px;
+	height: 50px;
+	background: #A9F5BC;
+	float: left;
+	opacity: 0.5;
+}
+#logo{
+	height: 419.97146933px;
+	width: 1024px;
+
+	
+}
+#noticias{
+	height: 258px;
+	width: 982px;
+	
+	padding-top: 22px;
+	padding-bottom: 22px;
+	padding-right: 22px;
+	padding-left: 22px;
+}
+article#n1, article#n2, article#n3{
+	height: 252px;
+	width:310px;
+	background:   #fff;
+	display: inline-block;
+	margin: 5px;
+
+	
+}
+.final{
+	height: 100px;
+	width:1024px;
+	background: #000;
+	margin: auto;
+}
+
+ a#a,#b,#c,#d,#e{
+	color: #000;
+}
+#inscri{
+	color: white;
+	
+
+}
+
+#inscri{
+	color: white;
+	
+
+}
+#c{
+	padding-top: 15px;
+	height: 100px;
+	width: 250px;
+}
+/*efectos hover*/
+div#inicio:hover{
+	
+opacity: 0.8;
+	-webkit-transition: opacity .2s;
+}
+
+div#resena:hover{
+	
+	opacity: 0.9;
+	-webkit-transition: opacity .2s;
+}
+div#misionvision:hover{
+	
+	opacity: 0.9;
+	-webkit-transition: opacity .2s;
+}
+div#constitucion:hover{
+	
+	opacity: 0.9;
+	-webkit-transition: opacity .2s;
+}
+div#otro:hover{
+	
+	opacity: 0.9;
+	-webkit-transition: opacity .2s;
+}
+/*estilo de la pagina numero 2*/
+#logoo{
+	height: 359.97146933px;
+	width: 824px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+	background: #fff;
+	opacity: 0.9;
+}
+	
+
+
+/*.l{opacity: .6;}*/
+	
+p{
+	opacity: 1;}
+	/*estilo de la pagina numero 3*/
+	#logo3{
+	height: 379.97146933px;
+	width: 944px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background: #fff;
+	opacity: 0.9;
+	
+	
+	
+}
+
+/* estilo de la otra pagina nombraba "otro"*/
+#video{
+	height:419.97146933px;
+    width:1024px;
+    padding-top: 20px;
+}
+#cua1{
+	height: 419.97146933px;
+	width: 480px;
+	background: #fff;
+	float: left;
+	padding-right: 30px;
+	padding-left: 30px;
+	opacity: .6;
+}
+#cua2{
+	height: 344.97146933px;
+	width: 400px;
+	background: #fff;
+	float: right;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 45px;
+	padding-bottom: 30px;
+
+}
+#p_vi{
+	font-family: verdana;
+	font-size: 16;
+}
+/*pagina llamada promocion */
+#f{
+	height: 677.97146933px;
+	width: 1024px;
+	
+}
+.cuadro{
+	height: 300px;
+	width: 210px;
+	float: left;
+	background: #fff;
+	margin-right: 10px;
+	margin-left: 22px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	
+}
+.cuadro2{
+	height: 340px;
+	width: 210px;
+	float: left;
+	background: #fff;
+	margin-right: 10px;
+	margin-left: 22px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	
+}
+.plomo{
+	
+	height: 75px;
+	width: 180px;
+    background: #ccc;
+
+}
+.contacto{
+	height: 25px;
+	width: 110px;
+	background: #fff;
+	margin-top:40px;
+	
+	padding-top:5px;
+	border: 2px solid ;
+
+	border-color: #0900FF;
+	border-radius:7px;
+}
+.con{
+	color: #0900FF;
+	font-weight: 900;	
+}
+.contacto:hover{
+	border-color: #fff;
+	background:  #0900FF;
+	-webkit-transition:background .2s;
+	color: #fff;
+}
+.contacto:hover .con{
+	color: #fff;
+	-webkit-transition:color .2s;
+
+}
+#indicaciones{
+	height: 100px;
+	width: 1024px;
+	background: #fff;
+}

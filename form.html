@@ -1,0 +1,144 @@
+<html>
+<head>
+	<title> cafe omagua </title>
+</head>
+<link rel="stylesheet" type="text/css" href="estiloform.css">
+<script type="text/javascript">
+function desplegar(valor){
+  document.getElementById("vol").style.visibility=valor;
+}
+  function validacion(){
+    
+    var fnom, fapellido, femail, fciu, fcel;
+ 
+     fnom=formun.nom.value;
+     fapellido=formun.apellido.value;
+     femail=formun.email.value;
+     fciu=formun.ciu.value;
+     fcel=formun.cel.value;
+    
+     if(isNaN(fnom)==false){
+      alert(" incorrecto, escribe tu nombre ");
+     }
+     if(isNaN(fapellido)==false){
+      alert("incorrecto ,escribe tu apellido");
+     }
+     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(femail)==false){
+      alert("correo incorrecto");
+     }
+     alert("s");
+    
+     if(isNaN(fcel)==true || fcel<99999999 || fcel>1000000000 ){
+      alert("numero de celular incorrecto, vuelva a intentarlo ");
+     }
+   }
+     function costo(){
+      var fcant, fenvio, fresultado, d;
+      fcant=parseInt(form2.cant.value);
+      fenvio=form2.envio.value;
+      fenvio=fenvio.toUpperCase();
+      if(fcant<8){
+      if(fenvio=="SI"){
+        fresultado=fcant*20
+      }else{
+        fresultado=fcant*15;
+      }}
+      else{
+        if(fenvio=="SI"){
+          fresultado=(fcant*20)-d;
+        }else{
+          d=10/100*15*fcant;
+           fresultado=(fcant*20)-d;
+        }
+      }
+      form2.resultado.value=fresultado;
+     
+     
+     
+  }
+</script>
+
+<body background="fondo2.jpg" height="1100px">
+<div id="vol">
+<div id="ventana">
+ <a href="javascript: desplegar('hidden'); ">cerrar<br><br> <br><center></a><h2>
+ CUANTO ME COSTARA?</h2><br><br>
+  <form name="form2">
+  <table>
+    <tr>
+      <td>Unidades : </td>
+      <td><input  name="cant" type="text" ></td>
+    </tr>
+    <tr>
+      <td>Envio ("si" , "no") : </td>
+      <td><input  name="envio" type="text" ></td>
+    </tr>
+    <tr>
+      <td>Costo total: </td>
+      <td><input  name="resultado" type="text" ></td>
+    </tr>
+    </table>
+    <br>
+    <input type="button" value="Calcular" onclick="costo();"><input type="reset" value="Limpiar">
+  </form></center> 
+  </div>
+</div>
+
+<div   id= "global">
+<div id ="head">
+<a href="file:///home/key/Escritorio/html/paginapresentar1.html"><img src="Ologo.jpg"  alt="imagen" width="300px" height="100px"></a>
+	
+</div>
+<div id="espaciador"> <p align="right"  style="font-size:12;  font-family:verdana">VILLA RICA </p></div>
+<div id="menu">
+
+<a style="text-decoration:none"id ="a" href="file:///home/key/Escritorio/html/paginapresentar1.html"> <div id="inicio" > <p style="font-family:verdana; font-weight:bold"  align="center" >INICIO </p> </div></a>
+ <a style="text-decoration:none"id ="b"href="file:///home/key/Escritorio/html/paginapresentar2.html"><div id="resena"><p style="font-family:verdana; font-weight:bold"align="center"> RESE&NtildeA </p> </div></a>
+ <a style="text-decoration:none"id="c" href="file:///home/key/Escritorio/html/paginapresentar3.html"> <div id="misionvision"><p style="font-family:verdana;font-weight:bold "align="center">MISI&OacuteN Y VISI&OacuteN </p> </div></a>
+   <a style="text-decoration:none"id="d"href="file:///home/key/Escritorio/html/paginapresentar4.html"> <div id="constitucion"><p  style="font-family:verdana; font-weight:bold "align="center">NUESTRO CAF&Eacute</p> </div></a>
+   <a style="text-decoration:none"id ="a" href="file:///home/key/Escritorio/html/form.html">  <div id="otro"><p style="font-family:verdana; font-weight:bold "align="center">CONT&AacuteCTENOS</p> </div></a>
+	
+</div>
+
+<div id="espaciador2">aa</div>
+<section id="f"> 
+           <article id="formu" >
+           <h1 id="t">Datos Generales</h1>
+           <br>
+           <form class="contact" name="formun">
+           <table>
+              <tr>
+              <td for="name">Nombre :</td> <td> <input name="nom"  id="i1" type="text" placeholder ="juan" required></td></tr>
+              <tr>
+              <td for="apellidos">Apellido :</td> <td><input  name="apellido" id="i1" type="text" placeholder="casas" required></td></tr><br>
+              <tr>
+              <td for="email"> Email :</td><td><input id="i1" name="email" type="email" placeholder="alguien@gmail.com" required ><span class="form_hint" ></span></td></tr>     
+              <tr>
+              <td for="cuidad"> Ciudad : </td><td><input id="i1" name="ciu" type="text" placeholder="lima"  ></td></tr>
+              <tr>
+              <td for="direccion"> Direcci&oacute;n :        </td> <td><input id="i1"  type="text" placeholder="av.los girasoles n 234"></td></tr>
+              <tr>
+              <td for="name"> Celular: </td><td> <input name="cel" id="i1" type="text" placeholder ="948288789" required></td></tr>
+              <tr>
+              <td> Comentario :</td>
+              <tr>
+             <td> <tr>
+             <td colspan="2"> <textarea rows="6" cols="55" name="co"> </textarea style="resize:none;"></td></tr>
+           </table>
+
+            <input type="button" value="ENVIAR" onclick="validacion();" >  <input type="reset" value="LIMPIAR">
+            </form>
+
+           </article>
+           <div id="img1"  ><img id="catarata" src="formu" width="394px">
+                 <a style="text-decoration:none" href="file:///home/key/Escritorio/html/promocion.html "><div id="costo"><center> <h2 id="inscribete" > Promocion!</h2></center></div></a>
+           </div>
+
+
+  </section>
+ <div id ="final">
+ <a style="text-decoration:none"href="file:///home/key/Escritorio/html/form.html"> <div id="c"><center> <h2 id="inscri" > Contactenos </h2></center></div>
+              
+</section>
+</body>
+</html>

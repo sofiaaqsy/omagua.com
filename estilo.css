@@ -1,0 +1,192 @@
+*{margin: 0;
+	border: 0;
+	padding: 0;
+
+}
+body{
+	background-image: url("imagen.jpg");
+}
+#contenedor{
+	background: #000000;
+	
+	height: 900px;
+	width:  750px;
+	margin-right: auto;
+	margin-left: auto;
+}
+header {
+	background: #fff;
+	height: 100px;
+	width:740px;
+	margin-right: auto;
+	margin-left: auto;
+	
+	padding-left: 10px;
+	
+	
+}
+#banner {
+	background: url("o") no-repeat;
+	height: 350px;
+	width: 750px;
+
+	
+}
+#noticias{
+	width: 730px;
+	background: #000000;
+	height: 220px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#tienda{
+
+	background: #000000;
+	height: 180px;
+	width: 730px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#marcas{
+	background: #000000;
+	height: 100px;
+}
+footer{
+	background: #000;
+	height: 40px;
+	padding-top: 14px;
+	
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#noticias #noticia1, #noticia2, #noticia3{
+background: #C777D2;
+height:180px; 
+width:200px;
+display: inline-block;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-right: 20px;
+padding-left: 20px;
+
+}
+#tienda #gata1, #gata2, #gata3, #gata4{
+	background:#633;
+	height: 180px;
+	width: 179px;
+	display: inline-block;
+	vertical-align: top;
+	
+
+}
+footer p{
+	font-family: arial;
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+}
+#noticias #noticia1 #tejado{
+	font-family: arial;
+	text-align: center;
+}
+
+
+button {
+ border: none;
+ background: #3a7999;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 5px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+}
+button:before {
+ content:'';
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 0px;
+ height: 42px;
+ background: rgba(255,255,255,0.3);
+ border-radius: 5px;
+ transition: all 2s ease;
+}
+button:hover:before {
+ width: 100%;
+}
+#logo{
+	height: 100px;
+	width: 250px;
+	
+	float: left;
+}
+#menu{
+	height: 90px;
+	width: 480px;
+	
+	float: right;
+	padding-top: 5px;
+	padding-right: 5px;
+	
+}
+div.menues{
+	height: 70px;
+
+	width: 120px;
+
+	float: left;
+	
+	background: #a69;
+	-webkit-transition:height .4s;
+	padding-top: 20px;
+}
+#nudo{background:#b58; }
+#fin{background: #C47;}
+#otro{background: #d36;}
+
+
+}
+img.img{
+	display: block;
+	
+	
+	
+}
+p.txt{
+	font-size: 1.2em;
+	text-align: center;
+	color: white;
+	padding-bottom: 15px;
+	opacity: .6;
+	-webkit-transition: padding-top .2s;
+	padding-top: 25px;
+
+}
+
+	div.menues:hover {
+		height: 95px;
+
+}
+  div.menues:hover p.txt{
+	padding-top: 50px;
+	opacity: 1;
+ }
+ img.img{
+ 	
+ 	display: block;
+ 	background: rgba(255,255,255, 0.15);
+ 	-webkit-border-radius: 90%;
+ 	-webkit-box-shadow: 0px 0px 0px 20px rgba(255,255,255,0);
+ 	-webkit-transition:box-shadow .4s;
+
+ }
+div.menues:hover img.img{
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+	
+	}

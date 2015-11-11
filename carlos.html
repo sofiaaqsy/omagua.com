@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	function comprobar(){
+		var nom,ape,sape,dna, cose,dni, email;
+		nom=document.getElementById("nom").value;
+		alert( "tu eres !"+nom);
+		ape=document.getElementById("ape").value;
+		sape=document.getElementById("sape").value;
+		dna=document.getElementById("dna").value;
+		cose=document.getElementById("cose").value;
+		email=document.getElementById("email").value;
+		dni=document.getElementById("dni").value;
+		
+
+	}
+	</script>
+</head>
+<div id="contenedor">
+	<form id="form">
+	<table>
+		<tr>
+		  <td>Cual es tu nombre ? :</td>
+		  <td><input type="text" id="nom"></td>	
+		</tr>
+		<tr>
+		  <td>Cual es tu primer apellido? :</td>
+		  <td><input type="text" id="ape"></td>	
+		</tr>
+		<tr>
+		  <td>Cual es tu segundo apellido? :</td>
+		  <td><input type="text"id="sape"></td>	
+		</tr>
+		<tr>
+		  <td>que dia naciste? :</td>
+		  <td><input type="text" id="dna"></td>	
+		</tr>
+		<tr>
+		  <td>EScribe el codigo secreto:</td>
+		  <td><input type="text"id="cose"></td>	
+		</tr>
+		<tr>
+		  <td>correo electronico :</td>
+		  <td><input type="text" id="email"></td>	
+		</tr>
+		<tr>
+		  <td>numero de DNI</td>
+		  <td><input type="text"id="dni"></td>	
+		</tr>
+	</table>
+
+	<input type="reset" value="limpiar "><input type="button" value="Estoy seguro " onclick="comprobar();"> 
+	 </form>
+</div>
+<body>
+	
+</body>
+</html>

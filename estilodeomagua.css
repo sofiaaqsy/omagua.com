@@ -68,6 +68,7 @@ article#n1, article#n2, article#n3{
 	background:   #fff;
 	display: inline-block;
 	margin: 5px;
+	padding: 
 
 	
 }
@@ -255,4 +256,38 @@ p{
 	height: 100px;
 	width: 1024px;
 	background: #fff;
+}
+/* pagina desplegable */
+#vol{
+	height: 100%;
+	width: 100%;
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0.9;
+	visibility: hidden;
+}
+#ventana{
+	background: #d3dce3;
+	border:solid #fff 10px;
+	width: 560px;
+	height: 460px;
+	opacity: 2;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin-top: -230;
+	margin-left: -280;
+}
+
+.tipoplan{
+	border: 1px solid ;
+	border-color: #fff;
+
+	margin: 5px;
+	padding: 5px;
+
+
 }

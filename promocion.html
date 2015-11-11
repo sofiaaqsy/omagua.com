@@ -3,9 +3,95 @@
 	<title> cafe omagua </title>
 </head>
 <link rel="stylesheet" type="text/css" href="estilodeomagua.css">
+<script type="text/javascript">
+function desplegar(valor){
+  document.getElementById("vol").style.visibility=valor;
+}
 
+function regular(){
+
+
+}
+
+</script>
 <body background="fondo2.jpg" height="1100px">
 
+
+
+<div id="vol">
+<div id="ventana">
+ <a href="javascript: desplegar('hidden'); ">cerrar<br><center></a><h2>
+ Tipo de plan :
+ </h2><br>
+  <form name="form2">
+   
+  <table>
+
+    <tr>
+      <td><h4>Planes regulares</h4> </td><br>
+     <div class="planregular">
+       <table>
+         <tr>
+         <td>Cantidad : </td>
+         <td><select>
+         <option>0</option>
+           <option>1/4</option>
+           <option>1/2</option>
+           <option>1</option>
+           <option>2</option>
+        
+         </select>
+           
+         </td>
+         </tr>
+         <tr>
+           <td>Precio total</td> 
+           <td><input type="text" name="resultado"></td>
+         </tr>
+         <tr><td><input type="button" value ="realizar" name="realizar "></td><td> <imput type="reset" value="limpiar" ></td></tr>
+       </table>
+         <table>
+
+    <tr>
+      <td><h4>Planes corporativos</h4> </td><br>
+     <div class="plancorporativo">
+       <table>
+         <tr>
+         <td>Cantidad : </td>
+         <td><select>
+          <option>0</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+           <option>6</option>
+           <option>7</option>
+           <option>8</option>
+           <option>9</option> 
+         </select>
+         
+           
+         </td>
+         <tr><td>Cantidad distinta :</td><td><input type="text" name="boton"></td></tr>
+         </tr>
+         <tr>
+           <td>Precio total</td> 
+           <td><input type="text" name="resultado"></td>
+         </tr>
+         <br>
+         </tr>
+         <tr><td><input type="button" value ="realizar" name="realizar "></td><td> <imput type="reset" value="limpiar" ></td></tr>
+       </table>
+     </div>
+    </tr>
+    <tr>
+      <td><h4>Planes corporativos</h4></td>
+      
+    </tr>
+    </table>
+    <br>
+  </form></center> 
+  </div>
+</div>
 
 
 <div   id= "global">
@@ -171,7 +257,7 @@
 </div>
 <div class="final" id="indicaciones">
 <p>Detalles de cafetera aqu&iacute;</p>
-<h4>Consulta otras cantidades aqu&iacute;</h4>
+<h4><a href="javascript: desplegar('visible');"> Otros precios</a></h4>
 	
 </div>
 <div class="final">

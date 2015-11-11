@@ -9,9 +9,65 @@ function desplegar(valor){
 }
 
 function regular(){
+var cantidad, total;
+cantidad=parseInt(document.getElementById("cantidad").value);
 
-
+if(cantidad<=1){
+  total=20;
 }
+ else if(cantidad<=2){
+  total=17.5*2;
+}
+ else if(cantidad<=3){
+  total=17.5*3;
+}
+else if(cantidad<=4){
+total=15*4
+}
+else if(cantidad<=5){
+  total=15*5;
+}
+else if(cantidad<=6){
+  total=15*6;
+}
+else if(cantidad<=7){
+  total=15*7;
+}
+else if(cantidad>=8){
+  total=13.75*cantidad;
+  if(cantidad>=12){
+    alert("intente con los planes coporativos");
+
+  }
+}
+resultado.value=total;
+}
+
+
+function corporativo(){
+  var cantidad, total;
+  cantidad=parseInt(document.getElementById("cant").value);
+  
+  if(cantidad>=3){
+    
+    if(cantidad>=3){
+      total=94.3*cantidad;
+    }
+    else if(cantidad>=5){
+      total=92*cantidad;
+    }
+    else if(cantidad>=7){
+      total=90.2*cantidad;
+    }
+    else if(cantidad >=9 ){
+      total=88.8*cantidad;
+    }
+    }else{
+       alert("introduce kilogramos mayores");
+    }
+    result.value=total;
+  }
+
 
 </script>
 <body background="fondo2.jpg" height="1100px">
@@ -30,57 +86,35 @@ function regular(){
     <tr>
       <td><h4>Planes regulares</h4> </td><br>
      <div class="planregular">
-       <table>
+       <table name ="reg" id="reg">
          <tr>
-         <td>Cantidad : </td>
-         <td><select>
-         <option>0</option>
-           <option>1/4</option>
-           <option>1/2</option>
-           <option>1</option>
-           <option>2</option>
-        
-         </select>
-           
-         </td>
+         <td>Cantidad en unidades : </td>
+         <td><input type="text" name="cantidad" id="cantidad">    </td>
          </tr>
          <tr>
            <td>Precio total</td> 
-           <td><input type="text" name="resultado"></td>
+           <td><input type="text" name="resultado" id="resultado"></td>
          </tr>
-         <tr><td><input type="button" value ="realizar" name="realizar "></td><td> <imput type="reset" value="limpiar" ></td></tr>
+         <tr><td><input type="button" value ="realizar" onclick="regular();" name="realizar "></td><td> <imput type="reset" value="limpiar" ></td></tr>
        </table>
+
          <table>
 
     <tr>
       <td><h4>Planes corporativos</h4> </td><br>
      <div class="plancorporativo">
-       <table>
+       <table name ="reg" id="reg">
          <tr>
-         <td>Cantidad : </td>
-         <td><select>
-          <option>0</option>
-           <option>3</option>
-           <option>4</option>
-           <option>5</option>
-           <option>6</option>
-           <option>7</option>
-           <option>8</option>
-           <option>9</option> 
-         </select>
-         
-           
-         </td>
-         <tr><td>Cantidad distinta :</td><td><input type="text" name="boton"></td></tr>
+         <td>Cantidad en kilogramos : </td>
+         <td><input type="text" name="cant" id="cant">    </td>
          </tr>
          <tr>
            <td>Precio total</td> 
-           <td><input type="text" name="resultado"></td>
+           <td><input type="text" name="result" id="result"></td>
          </tr>
-         <br>
-         </tr>
-         <tr><td><input type="button" value ="realizar" name="realizar "></td><td> <imput type="reset" value="limpiar" ></td></tr>
+         <tr><td><input type="button" value ="realizar" onclick="corporativo();" name="realizar "></td><td> <imput type="reset" value="limpiar" ></td></tr>
        </table>
+
      </div>
     </tr>
     <tr>
